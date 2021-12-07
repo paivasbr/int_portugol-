@@ -1,0 +1,98 @@
+Aluna: Brenda dos Santos Paiva Turma 41
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Exercício 1_(VETOR)
+programa
+{
+	funcao inicio()
+	{
+	
+		real nota[5],maiorNota=0.0
+		inteiro x
+
+		escreva("\nQual a primeira nota?: ")
+		leia(nota[0])
+		escreva("\nQual a segunda nota?: ")
+		leia(nota[1])
+		escreva("\nQual a terceira nota?: ")
+		leia(nota[2])
+		escreva("\nQual a quarta nota?: ")
+		leia(nota[3])
+		escreva("\nQual a quinta nota?: ")
+		leia(nota[4])
+			
+		maiorNota=nota[0]
+		
+		para(x=1;x<=4;x++){
+			se (nota[x] > maiorNota){
+				maiorNota = nota[x]
+			}
+			limpa()
+		}
+		escreva("\nA maior pontuação apresentada é ", maiorNota)
+	}
+	
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+2 Exercício_(VETOR)
+{
+	funcao inicio()
+	{
+		inteiro dado[10],x,Lanc=0,maiorNota=0,quantMaior=0
+		real mediaLanc=0.0,somaLanc=0.0
+
+		para(x=0;x<10;x++){
+			
+			escreva("\nQual o valor do lançamento?: ")
+			leia(dado[x])
+		
+			se (dado[x] > maiorNota){
+				maiorNota = dado[x]
+			}
+			
+			somaLanc += dado[x]
+			mediaLanc = somaLanc/10	
+		}
+		
+		para(x=0;x<10;x++){
+			se(maiorNota == dado[x]){
+				quantMaior++
+			}
+		}
+		limpa()
+		escreva("\nA média aritmética dos lançamentos apresentada é ",mediaLanc)
+		escreva("\nO número de ocorrencias do maior lançamentos foi de ",quantMaior)
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+4 Exercício_(MATRIZ)
+{
+	
+	funcao inicio()
+	{
+		real matriz[3][3], somaMatriz = 0, somaDiagonal = 0
+		inteiro linha, coluna = 0
+		logico nada = falso
+		
+		para(linha = 0; linha < 3; linha++)
+		{
+			para(coluna =0; coluna < 3; coluna++)
+			{
+			escreva("Digite um valor para preencher uma matriz de 3 x 3: ")
+			leia(matriz[linha][coluna])
+
+			somaMatriz += matriz[linha][coluna]
+			
+			
+			se(linha == coluna)
+			 
+			 somaDiagonal += matriz[linha][coluna]
+			}
+		}
+          limpa()
+          escreva("\n-----------------------------------------------------------------------")
+		escreva("\nA soma de todos os valores digitados é ",somaMatriz,".\n")
+		escreva("A soma da diagonal é ",somaDiagonal,".")
+		escreva("\n-----------------------------------------------------------------------\n")
+	}
+}

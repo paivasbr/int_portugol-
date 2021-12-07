@@ -1,0 +1,157 @@
+Aluna: Brenda dos Santos Paiva Turma 41
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Exercício 1_ (PARA)
+programa
+{
+	
+inclua biblioteca Matematica --> m
+
+	funcao inicio()
+	{
+		real salario=0.00,salarioTotal=0.00,medSalarios=0.00,filhosTotal=0.00
+		,medFilhos=0.00,maiorSalario=0.00,pessoasSalarioAte100=0.00,totalP100=0.00
+		inteiro filhos=0, hab=20
+		
+		para(hab=1; hab<=20; hab++) {
+			escreva(hab + "\n")
+			
+			escreva("\nQual o salário?: ")
+			leia(salario)
+			escreva("\nQual o número de filhos?: ")
+			leia(filhos)
+
+			salarioTotal += salario
+			filhosTotal = filhosTotal + filhos
+			se(salario > maiorSalario){
+				maiorSalario = salario
+			}
+			se(salario <= 100){
+				totalP100++
+			}
+		}
+			medSalarios = salarioTotal / hab
+			medFilhos = filhosTotal / hab
+			pessoasSalarioAte100 = (totalP100 / hab) *100
+
+			limpa()
+
+			escreva("\nA média de salário e de ",m.arredondar(medSalarios, 2), " reais")
+			escreva("\nA média do número de filhos e de ", m.arredondar(medFilhos, 2), ".")
+			escreva("\nO maior salário informado e de ",m.arredondar(maiorSalario, 2), " reais")
+			escreva("\nO percentual de pessoas com salário até 100 reais e de ", m.arredondar(pessoasSalarioAte100, 2), "%")
+		}
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Exercício 2_ (PARA)
+{
+	
+	funcao inicio()
+	
+{
+		inteiro num,somaNumero=0
+
+		para(num=1;num<=500; num++)
+		{
+			se(num%3==0 e num%2!=0){
+				somaNumero += num
+			}
+		}
+		escreva("\nA soma de todos os números ímpares múltiplos de três que se encontram no conjunto é ",somaNumero)
+		}
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Exercício 1_ (ENQUANTO)
+{
+	
+	funcao inicio()
+	{
+		real numMed=0.0,numSomaTotal=0.0
+		inteiro num=0,numTotalLido=0
+	
+		 enquanto(num>=0){
+		     escreva("\nQual o número? :")
+		     leia(num)
+		     
+		     se (num>=0){
+		     	numSomaTotal += num
+		     	numTotalLido++	
+		     	numMed = (numSomaTotal/numTotalLido)
+		     }
+		 }
+		 
+		 limpa()
+		 
+		 escreva("\nO somatório total dos valores númericos é ",numSomaTotal)
+		 escreva("\nA média dos valores númericos é ",numMed)
+		 escreva("\nO total de valores lidos é ",numTotalLido)
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Exercício 2_(ENQUANTO)
+{
+	
+	funcao inicio()
+	
+{
+		
+		inteiro num=0
+		
+		 escreva("\nDigite um número: ")
+	      leia(num)
+	      
+		 enquanto(num<=100){
+		     escreva(" ",num)
+		     num = num*3
+	      } 
+		 escreva(" ",num)
+	}		
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Exercício 1_(FAÇA...ENQUANTO)
+{
+	
+	funcao inicio()
+	
+{
+		inteiro numI=233, numF=456
+		inteiro num=numI, cont1=3, cont2=5
+		
+		faca{
+			escreva("\n",num)
+			se(300<=num e num<=400){
+				num+=cont1
+			}
+			senao{
+				num+=cont2
+			}
+			
+		}enquanto(233<=num e num<=456)
+	} 	
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Exercício 2_(FAÇA...ENQUANTO)
+{
+	
+	funcao inicio()
+	
+{
+		 
+		inteiro num=0, numDig=0, somaNum=0
+			
+		escreva("\nDigite um número do teclado:")
+		leia(numDig)
+	     
+	     faca{
+	     	num++
+	     	escreva("+",num)
+	     	somaNum += num
+					
+		}enquanto(num<numDig)
+						
+		escreva("\nA soma de todos números é de ", somaNum)
+	} 	
+}
+
+
+

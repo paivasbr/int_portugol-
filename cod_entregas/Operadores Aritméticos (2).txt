@@ -1,0 +1,129 @@
+Aluna: Brenda dos Santos Paiva Turma 41
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Exercício 1_
+programa
+{
+
+	funcao inicio()
+	{
+		real P,E,M
+		escreva("\nQual o peso de tomates?: ")
+		leia(P)
+
+		se(P > 50.0)
+		{
+			E=P-50.0
+			M=E*4.0
+			escreva("\nExcesso de peso ", E)
+			escreva("\no valor de multa é: ", M)
+		}
+
+		senao{
+          
+          	        E=0
+			M=0
+			escreva("\nExcesso de peso ", E)
+			escreva("\no valor de multa é: ", M)
+		}
+	}
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Exercício 2_ 
+{
+
+	funcao inicio()
+	{
+		real C,N,E,SN,SE,ST
+
+		escreva("\nQual a quantidade de horas trabalhadas?: ")
+		leia(N)
+	
+		se(N > 50.0)
+		{
+			E = N-50.0
+			SE = E*20.0
+			SN = 50.0*10.0
+			ST = SE+SN
+			
+		}
+
+		senao{
+
+               SE = 0
+			SN = N*10
+			ST = SE+SN
+			
+		}
+		escreva("\nO salário excedente custará ", SE, " reais")
+		escreva("\nO salário total é de ", ST, " reais")
+	}
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Exercício 3_
+{
+	inclua biblioteca Matematica
+ -->m
+	
+	funcao inicio()
+	{
+		inteiro n1,n2,n3,n4
+		real quad1,quad2,quad3,quad4
+		escreva("\nQual o valor do primeiro número?: ")
+		leia(n1)
+		escreva("\nQual o valor do segundo número?: ")
+		leia(n2)
+		escreva("\nQual o valor do terceiro número?: ")
+		leia(n3)
+		escreva("\nQual o valor do quarto número?: ")
+		leia(n4)
+
+		quad1 = m.potencia(n1, 2)
+		quad2 = m.potencia(n2, 2)
+		quad3 = m.potencia(n3, 2)
+		quad4 = m.potencia(n4, 2)
+
+		
+		se(quad3 >= 1000){
+	
+			escreva("\n\tO valor do quadrado do terceiro é: ",quad3)
+
+		}
+		senao{
+		
+	    escreva("\n\tOs valores lidos são: ",n1," ",n2," ",n3," ",n4,".")
+	    escreva("\n\tSeus respectivos quadrados são: ", quad1," ",quad2," ",quad3," ",quad4,".")
+		}
+		
+	}
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Exercício 4_
+{
+	funcao inicio()
+	{
+		inteiro num
+
+		escreva("\nDigite um número inteiro: ")
+		leia(num)
+
+		se(num%2 == 0){
+			
+			escreva("\nO número ",num," é par")
+		
+		}senao{
+
+			escreva("\nO número ",num," é ímpar")		
+	   
+	   	}se(num>0){
+	   		
+	   		escreva("\nO número é positivo")
+	   
+	   	}senao{
+
+	   		escreva("\nO número é negativo")
+	   		
+	   	}
+	}
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

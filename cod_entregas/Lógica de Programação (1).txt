@@ -1,0 +1,124 @@
+
+Aluna: Brenda dos Santos Paiva ////////// Turma 41
+Atividade://Exercício 1, 2, 3, 5 e 6
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+programa
+{
+	
+	funcao inicio()
+	{
+		/*
+		 1 ano são 365 dias
+		 1 mes são 30 dias
+		 1 dia equivale a 1 dia
+		 */
+		 inteiro anos, meses, dias, totalDias
+
+		 escreva("\nQuantos anos você tem? ")
+		 leia(anos)
+		 escreva("\nE quantos meses? ")
+		 leia(meses)
+		 escreva("\nPor fim, quantos dias? ")
+		 leia(dias)
+
+		 totalDias = anos * 365 + meses*30 + dias
+
+		 escreva("\nVocê viveu, até o momento, ", totalDias, " dias.")
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+funcao inicio()
+	{
+		
+		 inteiro anosEmDias, mesesEmDias, dias, totalDeAnos, totalDeMeses, totalDeDias
+           
+		escreva("\nQuantos anos você tem em dias? ")
+		 leia(anosEmDias)
+		escreva("\nE quantos meses em dias? ")
+		 leia(mesesEmDias)
+		escreva("\nPor fim, quantos dias? ")
+		 leia(dias)
+
+		 totalDeAnos = anosEmDias / 365 
+		 totalDeMeses = mesesEmDias/30 
+		 totalDeDias = dias
+
+
+		 escreva ("\nVocê tem, até o momento, ", totalDeAnos , " anos ", totalDeMeses , " meses e ",  totalDeDias ," e dias.")
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	funcao inicio()
+	{
+		inteiro totalSegundos,horas,minutos,segundos
+
+		escreva("Informe quantos segundos de duração: ")
+		leia(totalSegundos)
+
+		horas=totalSegundos/3600
+		minutos=(totalSegundos-(horas*3600))/60
+		segundos=(totalSegundos % 60)
+
+		escreva("O evento teve a duração de ",horas, " hora(s) ",minutos, " minuto(s) e ", segundos," segundo(s)")
+		
+		
+	}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	inclua biblioteca Matematica-->mat
+	
+	funcao inicio()
+	{
+		real p1,p2,p3,n1,n2,n3,mediaPonderada
+		p1=2
+		p2=3
+		p3=5
+
+		escreva("Informar nota 1: ")
+		leia(n1)
+		escreva("Informar nota 2: ")
+		leia(n2)
+		escreva("Informar nota 3: ")
+		leia(n3)
+
+		mediaPonderada = (p1*n1+p2*n2+p3*n3)/(p1+p2+p3)
+		escreva("Sua nota média foi de: ",mat.arredondar(mediaPonderada, 2))
+		
+	}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	inclua biblioteca Matematica-->mat
+	
+	funcao inicio()
+	{
+		real x1,x2,y1,y2,dx,dy,dxy,distanciaEntrePontos
+
+		escreva("Informe o valor de x1: ")
+		leia(x1)
+		escreva("Informe o valor de y1: ")
+		leia(y1)
+		escreva("Informe o valor de x2: ")
+		leia(x2)
+		escreva("Informe o valor de y2: ")
+		leia(y2)
+
+		dx=mat.potencia((x2-x1), 2)
+		dy=mat.potencia((y2-y1), 2)
+		dxy=dx+dy
+		distanciaEntrePontos=mat.raiz(dxy, 2)
+
+		escreva("A distancia entre os pontos é de: ",mat.arredondar(distanciaEntrePontos, 2))
+		
+	}
